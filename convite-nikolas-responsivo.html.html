@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Convite Espacial - Nikolas 10 Anos</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+<div class="nebula"></div>
+<div class="starfield" id="starfield"></div>
+
+<div class="invite-card">
+  <div class="card-overlay"></div>
+  <div class="corner corner-tl"></div><div class="corner corner-tr"></div>
+  <div class="corner corner-bl"></div><div class="corner corner-br"></div>
+  <div class="planet-1"></div><div class="planet-2"></div>
+
+  <div class="rocket-wrap"><span class="rocket">🚀</span></div>
+  <div class="mission-badge">✦ Missão Espacial ✦</div>
+  <p class="prepare">Prepare-se para uma</p>
+  <p class="mission-title">Missão Espacial</p>
+  <div class="name">NIKOLAS</div>
+
+  <div class="age-wrap">
+    <div class="age-line"></div>
+    <div class="age-text">⭐ 10 Anos ⭐</div>
+    <div class="age-line right"></div>
+  </div>
+
+  <div class="stars-row">
+    <span class="star-icon" style="--i:0">✦</span>
+    <span class="star-icon" style="--i:1">★</span>
+    <span class="star-icon" style="--i:2">✦</span>
+    <span class="star-icon" style="--i:3">★</span>
+    <span class="star-icon" style="--i:4">✦</span>
+  </div>
+
+  <div class="info-grid">
+    <div class="info-block">
+      <div class="info-icon">🌌</div>
+      <div>
+        <div class="info-label">Base Estelar</div>
+        <div class="info-value">Casa da Vovó</div>
+        <div class="info-sub">Entrada Lateral</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <div class="info-icon">🛸</div>
+      <div>
+        <div class="info-label">Horário de Lançamento</div>
+        <div class="time-number">16:00</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PIN -->
+  <div class="pin-section">
+    <div class="pin-label">🔐 Digite seu código de acesso</div>
+    <div class="pin-boxes">
+      <input class="pin-box" id="p0" type="tel" maxlength="1" inputmode="numeric" pattern="[0-9]*" autocomplete="off">
+      <input class="pin-box" id="p1" type="tel" maxlength="1" inputmode="numeric" pattern="[0-9]*" autocomplete="off">
+      <input class="pin-box" id="p2" type="tel" maxlength="1" inputmode="numeric" pattern="[0-9]*" autocomplete="off">
+      <input class="pin-box" id="p3" type="tel" maxlength="1" inputmode="numeric" pattern="[0-9]*" autocomplete="off">
+    </div>
+    <div class="pin-msg" id="pinMsg"></div>
+  </div>
+
+  <!-- Guest reveal -->
+  <div class="guest-section" id="guestSection">
+    <div class="guest-badge">🌟 Convidado de Honra 🌟</div>
+  </div>
+</div>
+
+<script src="src/js/index.js"></script>
+
+</body>
+</html>
