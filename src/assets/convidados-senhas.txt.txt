@@ -17,7 +17,10 @@ Fabiano e Edna             | 5908
 Rúbens e Família           | 6742
 Geraldo e Família          | 3185
 Bruno e Família            | 9627
-Jorge e Família            | 4053
+Chico Souza  e Família     | 3105
+Leticia Bruna Tomaz             | 8345
+Thomaz e Natalia           | 0000
+
 
 ========================================
   Cada convidado digita sua senha

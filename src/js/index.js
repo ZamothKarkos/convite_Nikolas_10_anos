@@ -14,7 +14,7 @@ const guests = {
     "9627": "Bruno e Família",
     "4053": "Jorge e Famíliaa",
     "3105": "Chico Souza e Família",
-    "8345": "Leticia Bruna",
+    "8345": "Leticia Bruna Tomaz",
     "0000": "Natália e Thomaz"
 };
 
