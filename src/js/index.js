@@ -37,7 +37,7 @@ function showError() {
 }
 
 function enviarNotificacao(name, code) {
-    if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === "https://script.google.com/macros/library/d/1NV5sSVlsvRZjXb4z1D11IItnU2oxIlrfaC-s4CmdtFpMSsE92Tz5dDp2/3") {
+    if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === "https://script.google.com/macros/library/d/1NV5sSVlsvRZjXb4z1D11IItnU2oxIlrfaC-s4CmdtFpMSsE92Tz5dDp2/4") {
         console.warn("URL do Google Apps Script não configurada no index.js.");
         return;
     }
