@@ -13,7 +13,9 @@ const guests = {
     "3185": "Geraldo e Família",
     "9627": "Bruno e Família",
     "4053": "Jorge e Famíliaa",
-    "8345": "Leticia Bruna"
+    "3105": "Chico Souza e Família",
+    "8345": "Leticia Bruna",
+    "0000": "Natália e Thomaz"
 };
 
 const boxes = [0, 1, 2, 3].map(i => document.getElementById('p' + i));
@@ -37,7 +39,7 @@ function checkCode() {
     if (code.length < 4) return;
     const name = guests[code];
     if (name) {
-        msg.textContent = '✓ Bem-vindo(a)!';
+        msg.textContent = '✓ convite confirmado. Bem-vindo(a)!';
         msg.className = 'pin-msg ok';
         sec.innerHTML = `<div class="guest-badge">🌟 Convidado de Honra 🌟</div><div class="guest-name">👨‍🚀 ${name}</div>`;
     } else {

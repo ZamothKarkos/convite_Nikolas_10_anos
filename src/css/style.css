@@ -207,6 +207,7 @@
     color: var(--glow-cyan); text-align: center;
     caret-color: var(--glow-cyan); outline: none;
     transition: border-color .25s, box-shadow .25s, background .25s;
+    appearance: textfield;
     -moz-appearance: textfield;
     /* prevent iOS zoom on focus (font-size >= 16px) */
     font-size: max(16px, var(--fs-pin));
