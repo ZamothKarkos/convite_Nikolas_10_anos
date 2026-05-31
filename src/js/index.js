@@ -1,3 +1,5 @@
+// URL Web App do Google Apps Script (Cole aqui a URL que você vai gerar no Passo 2)
+const GOOGLE_SCRIPT_URL = "SUA_URL_DO_GOOGLE_APPS_SCRIPT_AQUI";
 
 const guests = {
     "3847": "João e Família",
@@ -34,6 +36,22 @@ function showError() {
     resetGuest();
 }
 
+function enviarNotificacao(name, code) {
+    if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === "https://script.google.com/home/projects/1NV5sSVlsvRZjXb4z1D11IItnU2oxIlrfaC-s4CmdtFpMSsE92Tz5dDp2/edit") {
+        console.warn("URL do Google Apps Script não configurada no index.js.");
+        return;
+    }
+
+    fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+            'Content-Type': 'text/plain'
+        },
+        body: JSON.stringify({ name: name, code: code })
+    }).catch(err => console.error("Erro ao enviar notificação de acesso:", err));
+}
+
 function checkCode() {
     const code = boxes.map(b => b.value).join('');
     if (code.length < 4) return;
@@ -42,6 +60,9 @@ function checkCode() {
         msg.textContent = '✓ convite confirmado. Bem-vindo(a)!';
         msg.className = 'pin-msg ok';
         sec.innerHTML = `<div class="guest-badge">🌟 Convidado de Honra 🌟</div><div class="guest-name">👨‍🚀 ${name}</div>`;
+
+        // Disparar notificação por e-mail de forma assíncrona
+        enviarNotificacao(name, code);
     } else {
         showError();
     }
