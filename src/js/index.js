@@ -37,7 +37,7 @@ function showError() {
 }
 
 function enviarNotificacao(name, code) {
-    if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === "SUA_URL_DO_GOOGLE_APPS_SCRIPT_AQUI") {
+    if (!GOOGLE_SCRIPT_URL) {
         console.warn("URL do Google Apps Script não configurada no index.js.");
         return;
     }
